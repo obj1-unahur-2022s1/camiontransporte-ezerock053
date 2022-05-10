@@ -65,6 +65,3 @@ object embalajeSeguridad {
 	method nivelDePeligro() = cosaInterior.nivelDePeligro() /2
 }
 
-
-
-
