@@ -1,5 +1,10 @@
+/* 
+ * El test NO anduvo
+ */
+
 import camion.*
 import cosas.*
+
 
 describe "test1"{
 	test"Bumblebee como Robot, batería bateria Antiaerea, embalaje con ladrillos adentro."{
