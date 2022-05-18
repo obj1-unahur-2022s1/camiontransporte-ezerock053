@@ -1,5 +1,8 @@
 import camion.*
 import cosas.*
+/* El test de contendor porturio no anda 
+ * Revisa porque los cambio para que funcione
+ * */
 
 describe "Test Ladrillos"{
 	test "Test 10 ladrillos."{
@@ -27,13 +30,13 @@ describe "Test batería antiaérea."{
 
 describe "Test Contenedor Portuario."{
 	test "Test de contenedor con Knight Rider, arena y bumblebee adentro."{
-		contenedor.cosasAdentro(arena)
+		//contenedor.cosasAdentro([arena])
 		arena.peso(10)
 		
-		contenedor.cosasAdentro(knightRider)
+		//contenedor.cosasAdentro([knightRider])
 		
 		bumblebee.estaEnModoAuto(true)
-		contenedor.cosasAdentro(bumblebee)
+		contenedor.cosasAdentro([arena, bumblebee, knightRider ])
 		
 		
 		assert.equals(15, contenedor.nivelDePeligro())
